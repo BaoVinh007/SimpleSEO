@@ -1,5 +1,6 @@
 <?php
-	$root = "http://localhost/woorankV2/";
+	$root = "http://localhost/simpleseo/";
+	//var_dump( gearman_version() );
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -74,13 +75,13 @@
 						type: "POST",
 						url: "ajax.php",
 						data: $("#analyze").serialize(),
-
+						/*
 						beforeSend: function(XMLHttpRequest){
 							var overlay = $('<div id="overlay"></div>');
 							overlay.appendTo(document.body);
 							//$("#overlayimage").css("display", "block");
 						},
-
+						*/			
 						success: function(data){				
 							location = "<?php echo $root ?>www/"+data;				
 						}

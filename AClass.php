@@ -4,7 +4,7 @@ session_start();
 
 class AClass  
 {
-	public $root1 = "http://localhost/woorank/";
+	public $root1 = "http://localhost/simpleseo/";
 	
 	public $domain1;
 	
