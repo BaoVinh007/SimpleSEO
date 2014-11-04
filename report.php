@@ -60,12 +60,7 @@
 		
 		$ranking_websiteThread->start();
 		$ranking_websiteThread->join();
-		
-		$alexa_rank =  $ranking_websiteThread->alexa_rank;
-		$alexa_class = $ranking_websiteThread->alexa_class;
-		$page_rank = $ranking_websiteThread->page_rank;
-		$pr_class = $ranking_websiteThread->pr_class;
-		
+						
 		include("class/ContentClass.php");
 		$contentClass = new ContentClass();		
 		$links_str = $contentClass->getPopularPages($content,$domain);
@@ -279,6 +274,13 @@
 					<div class="report_main_section" id="main_section_visitors">		
                     	<?php
 							echo $ranking_websiteThread->output;
+							
+							$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+							$txt = $ranking_websiteThread->output;
+							fwrite($myfile, $txt);
+							
+							fclose($myfile);
+							
 						?>
 						<!--
                         	Put output of thread1 here:

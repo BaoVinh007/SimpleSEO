@@ -19,6 +19,14 @@
 		
 		public function run() 
 		{
+			$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+			$txt = "John Doe\n";
+			fwrite($myfile, $txt);
+			$txt = "Jane Doe\n";
+			fwrite($myfile, $txt);
+			fclose($myfile);
+			
+			
 			//$this->traffic = $this->getTraffic($this->domain);
 			$this->alexa_rank =  $this->getAlexaRank($this->url);
 			$this->alexa_class = $this->getAlexaRankCLass($this->alexa_rank);
@@ -93,6 +101,8 @@
 			';
 			
 			$this->output = $ouput;
+			
+			
 			
 		}
 		
