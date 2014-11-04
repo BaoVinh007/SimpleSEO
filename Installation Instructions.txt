@@ -1,0 +1,5 @@
+Unzip and before uploading files on your server,
+please change the root path (http://gh-export.us/woorank/) in index.php
+and report.php file according to your domain. and give the "sites"
+folder write permissions. if you still find any problem in installation
+you can send me your ftp details i will install on your server.

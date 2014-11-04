@@ -1,0 +1,32 @@
+#home {
+	width: 820px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#content {
+	margin-bottom: 50px;
+}
+#content h1 {
+	    margin: 0 auto 25px auto;
+}
+
+
+#home #main_form {
+	width: 555px;
+	margin: 0 auto;
+}
+
+
+#home.en #main_form {
+   width: 550px;
+}
+ 
+#home.es #main_form {
+   width: 565px;
+}
+
+ 
+#home.en #brandedArea, #home.fr #brandedArea, #home.es #brandedArea {
+	margin-left: -70px;
+}

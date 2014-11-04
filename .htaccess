@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^www/([.a-zA-Z0-9_-]+)$ report.php?domain=$1 [NC,L]
+

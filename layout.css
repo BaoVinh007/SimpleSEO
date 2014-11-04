@@ -1,0 +1,34 @@
+#container {
+	width: 820px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#top h1 {
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+#top #main_form {
+	position: absolute;
+	top: 100px;
+	right: 0;
+}
+#top #main_form input.text {
+	width: 200px;
+}
+
+#content {
+	margin-bottom: 50px;
+}
+
+#back_to_top {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -20px;
+	width: 39px;
+	height: 39px;
+	background: url(../images/top.gif);
+	text-indent: -9999px;
+}
